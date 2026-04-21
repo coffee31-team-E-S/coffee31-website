@@ -1,11 +1,15 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex items-center justify-center min-h-screen">
-        <p className="text-[#8b5c2a] font-display text-2xl">האתר בבנייה</p>
+      <main>
+        <Hero />
+        <div className="flex items-center justify-center py-24">
+          <p className="text-[#8b5c2a] font-serif text-2xl">האתר בבנייה</p>
+        </div>
       </main>
     </>
   );

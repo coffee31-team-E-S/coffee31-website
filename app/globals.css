@@ -2,17 +2,30 @@
 
 @theme inline {
   --font-sans: var(--font-heebo);
-  --font-display: var(--font-playfair);
+  --font-serif: var(--font-frank-ruhl);
 
   --color-cream: #f4ecdf;
-  --color-espresso: #1a1613;
+  --color-cream-2: #ece1cd;
+  --color-paper: #faf5ea;
+  --color-ink: #1a1613;
+  --color-ink-2: #2a231d;
+  --color-espresso: #3b2a1e;
+  --color-crema: #b9743a;
+  --color-crema-dark: #8b4f23;
+  --color-wood: #a67a4d;
+  --color-olive: #5a6147;
+  --color-line: rgba(26, 22, 19, 0.14);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* מניעת overflow אופקי ב-RTL */
 body {
   overflow-x: hidden;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(50%); }
 }
