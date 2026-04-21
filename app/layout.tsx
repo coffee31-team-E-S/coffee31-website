@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Heebo, Playfair_Display } from "next/font/google";
+import { Heebo, Frank_Ruhl_Libre } from "next/font/google";
 import "./globals.css";
 
 const heebo = Heebo({
@@ -8,9 +8,9 @@ const heebo = Heebo({
   weight: ["300", "400", "500", "700", "900"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+const frankRuhl = Frank_Ruhl_Libre({
+  variable: "--font-frank-ruhl",
+  subsets: ["hebrew", "latin"],
   weight: ["400", "500", "700"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${heebo.variable} ${playfair.variable} h-full`}
+      className={`${heebo.variable} ${frankRuhl.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-[#f4ecdf] text-[#1a1613] font-sans antialiased">
         {children}
